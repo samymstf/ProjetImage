@@ -228,9 +228,9 @@ public class Lancher {
 				int pixel = img.getRGB(j, i);
 				int red = (pixel >> 16) & 0xff;
 				if (red > s) {
-					im_thresh.getRaster().setPixel(j, i, noir);
-				} else {
 					im_thresh.getRaster().setPixel(j, i, blanc);
+				} else {
+					im_thresh.getRaster().setPixel(j, i, noir);
 				}
 			}
 		}
