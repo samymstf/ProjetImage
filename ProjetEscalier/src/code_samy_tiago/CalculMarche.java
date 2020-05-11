@@ -67,7 +67,7 @@ public class CalculMarche {
 
 		// 5) Calcul du nombre de marches
 		for (int j = 1; j < 14; j++) {
-			File path = new File(PATH + "open_t2_" + j + ".jpg");
+			File path = new File(PATH + "close_t6_" + j + ".jpg");
 			BufferedImage erode = ImageIO.read(path);
 			int precedent = Color.white.getRGB(), actuel = 0, somme = 0;
 			for (int i = 1; i < erode.getHeight(); i++) {
